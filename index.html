@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.min.css">
+  <script defer src="/js/login.js"></script>
+</head>
+<body class="login">
+  <div class="container align-content-center" >
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="/images/logo1.png" class="logoCol" alt="logo-image">
+        </div>
+          <div class="col myForm" id="myForm">
+        <form action="/landingPage.html" class="loginForm">
+          <input type="radio" class="btn-check" autocomplete="off" checked>
+            <label class="btn btnOne" id="btnOne" style="opacity: 0.5;"  onclick="onClickBtnOne()">
+              <img class="btnUser" src="/images/user button icon2.png"  alt="User">
+              <p class="user-text">User</p>
+            </label>
+
+            <input type="radio" class="btn-check"  autocomplete="off">
+            <label class="btn btnTwo" id="btnTwo" style="opacity: 0.5;" onclick="onClickBtnTwo()" op>
+              <img class="btnGuest" src="/images/user button icon2.png" alt="Guest">
+              <p class="guest-text">Guest</p>
+            </label>
+          <div class="input-group">
+            <label for="username" class="label">Username</label>
+            <input type="text" id="username" class="input">
+            <span class="error-message"></span>
+          </div>
+          <div class="input-group">
+            <label for="password" class="label">Password</label>
+            <input type="password" id="password" class="password">
+            <span class="error-message"></span>
+          </div>
+          <br>
+          <button class="btn btn-outline-light px-5 py-2" type="submit" id="login">Login</button>
+          <div class="input-group"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let btnOne = document.getElementById("btnOne");
+    let btnTwo = document.getElementById("btnTwo");
+
+    function onClickBtnOne() {
+      btnOne.style.opacity = 1;
+      btnTwo.style.opacity = 0.5;
+    }
+
+    function onClickBtnTwo() {
+      btnOne.style.opacity = 0.5;
+      btnTwo.style.opacity = 1;
+    }
+  </script>
+</body>
+</html>

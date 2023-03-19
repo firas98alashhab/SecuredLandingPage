@@ -1,0 +1,114 @@
+body {
+  background-color: #d9d9d9;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+}
+
+.logoCol {
+  margin-top: 300px;
+  margin-left: 180px;
+}
+
+#myForm {
+  background-color: gray;
+  max-width: 405px;
+  padding: 50px;
+  margin-top: 150px;
+  height: auto;
+  border-radius: 70px;
+  margin-right: 250px;
+}
+
+.guest-text {
+  color: white;
+  margin-right: -165px;
+}
+
+.user-text {
+  color: white;
+  margin-left: -10px;
+}
+
+@media (max-width: 720px){
+  #myForm {
+    background-color: gray;
+    min-width: 420px;
+    padding: 50px;
+    height: auto;
+    border-radius: 70px;
+    margin-left: 250px;
+    margin-top: 50px;
+  }
+  .logoCol {
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+  .btnUser {
+    width: 120px;
+    margin-left: -8px;
+  }
+  
+  .btnGuest {
+    width: 120px;
+    margin-left: 40px;
+  }
+  .guest-text {
+    color: white;
+    margin-left: 40px;
+  }
+}
+
+#username, #password {
+  border-radius: 8px;
+}
+
+.input, .password {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 45px;
+  color: #333;
+  background-color: white;
+  border: 1px solid rgb(180, 180, 180);
+  padding-left: 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.input-error:focus {
+  border: 1px solid red;
+  transform: .5s;
+}
+
+.btnOne, .btnTwo {
+  margin-bottom: 50px;
+}
+
+
+.btnUser {
+  width: 120px;
+  margin-left: -8px;
+}
+
+.btnGuest {
+  width: 120px;
+  margin-right: -160px;
+}
+
+.label {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#login {
+  margin-left: 85px;
+  margin-top: 10px;
+}
